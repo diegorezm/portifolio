@@ -1,0 +1,120 @@
+.projects__wrapper{
+  padding-top:1.5em;
+}
+
+.projects__list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
+  place-items: center;
+  gap: 1rem;
+  padding: 1em;
+}
+
+.list__item__wrapper{
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: var(--radius);
+  background-color: var(--crust);
+  transition-duration: 300ms;
+  padding:1em;
+  gap:0.5em;
+  height: 100%;
+  width: 100%;
+}
+
+.list__image__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+}
+
+.list__image{
+  width:100%;
+  height: 100%;
+  border-radius: var(--radius);
+  transition: filter 0.3s;
+}
+
+.list__anchor__action{
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: auto;
+  width: 75%;
+  transition-duration: 300ms;
+}
+.list__item__wrapper a{
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--tertiary-gradient-bg);
+  color:var(--bg-color);
+  width: 30%;
+  height: 2.5rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.mobile__anchor__action{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap:1em;
+}
+
+.mobile__anchor__action a{
+  width: 45%;
+}
+
+.list__tag{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list__anchor__action a:hover{
+  transform: scale(1.2);
+}
+
+.list__anchor__action:hover{
+  display: flex;
+}
+
+.projects__list li:hover{
+  box-shadow: 0 0 4px 4px var(--pink-color);
+}
+
+.list__item__wrapper:hover .list__image{
+  filter: blur(2px);
+}
+
+.list__item__wrapper:hover .list__anchor__action{
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .mobile__anchor__action{
+    display: flex;
+  }
+
+  .list__item__wrapper:hover .list__anchor__action{
+    display: none;
+  }
+
+}

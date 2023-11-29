@@ -1,0 +1,20 @@
+.container{
+  color:var(--fg-color);
+  min-height: 100%;
+  min-width: 100%;
+  z-index: 0;
+  overflow-x:hidden;
+  a{
+    text-decoration: none;
+  }
+  button:hover{
+      cursor: pointer
+  }
+}
+.container__primary{
+  background-image: var(--primary-gradient-bg);
+
+}
+.container__secondary{
+  background-image: var(--secondary-gradient-bg);
+}

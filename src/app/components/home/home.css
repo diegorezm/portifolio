@@ -1,0 +1,143 @@
+.home__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 100%;
+  margin:auto;
+  padding-top: 5rem;
+}
+
+.home__hero{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap:1rem;
+}
+
+.home__image{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.image{
+  width: min(30rem, 90vw);
+  height: min(30rem, 90vw);
+  border-radius: 1em;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.home__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1.2em;
+  height: min(30rem, 90vw);
+  width: 50%;
+  padding: 1em;
+  gap:10rem;
+}
+
+.type__animation,
+p{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.home__hero__text{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+.type__animation{
+  font-size: 3.5rem;
+  width: 100%;
+}
+
+.home__button button{
+  font-size: 2rem;
+  min-height: 60px;
+  width: 80%;
+  align-items:center;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  text-align:center;
+  border-radius: var(--radius);
+  border:none;
+  background: var(--crust);
+  color: var(--grey-color);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+
+.icon{
+  transition-duration: 300ms;
+}
+
+.home__button button:hover{
+  color: var(--mauve-color);
+}
+
+.home__button button:hover > .icon{
+    transform: rotate(90deg);
+}
+
+@media(min-width: 1360px){
+  .home__button button{
+    width: 55%;
+  }
+}
+
+@media(max-width: 1100px){
+  .home__hero{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:0rem;
+  }
+  .home__text{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    gap:2rem;
+  }
+  .home__button button{
+    width: 50%;
+    padding:1rem;
+    margin:auto;
+  }
+  .home__hero__text p{
+   font-size: 1.4rem;
+   align-items: center;
+   width: 60%;
+}
+}
+
+@media(max-width: 760px){
+  .home__text{
+    width: 100%;
+    flex-direction: column;
+    align-items:center;
+  }
+
+  .home__button button{
+    width: 100%;
+  }
+  .type__animation{
+    font-size: 3rem;
+  }
+  .home__hero__text p{
+    text-align: center;
+   margin: auto;
+   font-size: 1.4rem;
+   width: 100%;
+}
+}
