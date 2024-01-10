@@ -10,6 +10,7 @@ import pythonicon from '@/assets/svgs/python.svg';
 import typescriptIcon from '@/assets/svgs/typescript.svg';
 import postgreSqlIcon from '@/assets/svgs/postgresql.svg';
 import mongodbIcon from '@/assets/svgs/mongodb.svg';
+import svelteIcon from '@/assets/svgs/svelte.svg';
 
 interface Props {
   tech: specs;
@@ -23,6 +24,7 @@ const iconMap = {
   [specs.Typescript]: typescriptIcon,
   [specs.Python]: pythonicon,
   [specs.Mongodb]: mongodbIcon,
+  [specs.svelte]: svelteIcon,
 }
 
 const getIconForTech = (tech: specs) => {
@@ -45,6 +47,8 @@ const getTechName = (tech: specs) => {
       return 'Python';
     case specs.Mongodb:
       return 'MongoDB';
+    case specs.svelte:
+      return 'Svelte';
     default:
       return '';
   }
@@ -58,6 +62,7 @@ const colorMap = {
   [specs.Typescript]: 'var(--sapphire-color)',
   [specs.Python]: 'var(--yellow-color)',
   [specs.Mongodb]: 'var(--green-color)',
+  [specs.svelte]: 'var(--maroon-color)'
 }
 
 export default function Tag({ tech }: Props) {

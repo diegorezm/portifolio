@@ -8,6 +8,7 @@ export enum specs {
   Typescript,
   Python,
   Mongodb,
+  svelte
 }
 
 export interface ProjectsInterface {
