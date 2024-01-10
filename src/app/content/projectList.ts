@@ -2,6 +2,7 @@ import socialMedia from '@/assets/proj/social-media.png'
 import agendaApp from '@/assets/proj/agenda-app.png'
 import cardapioApp from '@/assets/proj/cardapio-app.png'
 import schooApp from '@/assets/proj/school-app.png'
+import startpageApp from '@/assets/proj/start-page.png'
 
 import { ProjectsInterface, specs } from "../interfaces"
 
@@ -22,6 +23,17 @@ export const projectList: ProjectsInterface[] = [
   },
   {
     id: 2,
+    name: "Start page",
+    github: "https://github.com/diegorezm/start_page",
+    tech: [
+      specs.Typescript,
+      specs.svelte
+    ],
+    showcase: "https://diegorezm.github.io/start_page/",
+    image: startpageApp,
+  },
+  {
+    id: 3,
     name: "Social media",
     github: "https://github.com/diegorezm/social-media-nextjs",
     tech: [
@@ -34,7 +46,7 @@ export const projectList: ProjectsInterface[] = [
     image: socialMedia,
   },
   {
-    id: 3,
+    id: 4,
     name: "Agenda app",
     github: "https://github.com/diegorezm/agenda-app",
     tech: [
@@ -47,7 +59,7 @@ export const projectList: ProjectsInterface[] = [
     image: agendaApp,
   },
   {
-    id: 4,
+    id: 5,
     name: "Cardapio app",
     github: "https://github.com/diegorezm/app-cardapio",
     tech: [
