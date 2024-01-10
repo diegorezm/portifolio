@@ -1,5 +1,5 @@
 "use client"
-import Modal from "../Modal"
+import CurriculumModal from "../CurriculumModal"
 import Image from "next/image"
 import { IoCaretForwardSharp } from 'react-icons/io5'
 
@@ -23,7 +23,7 @@ export default function Home() {
   }
   return (
     <Container primary>
-      {showModal && <Modal toggleModal={toggleModal} />}
+      {showModal && <CurriculumModal toggleModal={toggleModal} />}
 
       <div id="home" />
       <section className="home__wrapper">
