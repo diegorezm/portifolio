@@ -20,7 +20,8 @@ export default function Projects() {
   useEffect(() => {
     load()
   }, [load])
-  function imageLoader({ src }) {
+  function imageLoader({ src }: { src: string}) {
+    console.log(src)
     return `https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/proj/${src}`
   }
   return (
@@ -35,7 +36,7 @@ export default function Projects() {
               <li key={id} className="list__item__wrapper">
                 <h1>{name}</h1>
                 <div className="list__image__wrapper">
-                  <Image loader={imageLoader} src={"social-media.png"} alt="Image project" className="list__image"  width={100} height={100} quality={80} />
+                  <Image loader={imageLoader} src={image} alt="Image project" className="list__image"  width={100} height={100} quality={80} />
                 </div>
                 <div className="list__anchor__action">
                   <a href={github} target="_blank">Code</a>
