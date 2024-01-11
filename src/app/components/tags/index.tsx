@@ -2,33 +2,27 @@ import Image from 'next/image';
 import { Specs } from '@/app/interfaces';
 import './tag.css';
 
-import javaIcon from '@/assets/svgs/java.svg';
-import tailwindIcon from '@/assets/svgs/tailwind.svg';
-import nextIcon from '@/assets/svgs/nextjs.svg';
-import pythonicon from '@/assets/svgs/python.svg';
-
-import typescriptIcon from '@/assets/svgs/typescript.svg';
-import postgreSqlIcon from '@/assets/svgs/postgresql.svg';
-import mongodbIcon from '@/assets/svgs/mongodb.svg';
-import svelteIcon from '@/assets/svgs/svelte.svg';
-
 interface Props {
   tech: Specs;
 }
 
 const iconMap = {
-  [Specs.Java]: javaIcon,
-  [Specs.PostgreSQL]: postgreSqlIcon,
-  [Specs.Tailwind]: tailwindIcon,
-  [Specs.Nextjs]: nextIcon,
-  [Specs.Typescript]: typescriptIcon,
-  [Specs.Python]: pythonicon,
-  [Specs.Mongodb]: mongodbIcon,
-  [Specs.Svelte]: svelteIcon,
+  [Specs.Java]: "java.svg",
+  [Specs.PostgreSQL]: "postgresql.svg",
+  [Specs.Tailwind]: "tailwind.svg",
+  [Specs.Nextjs]: "nextjs.svg",
+  [Specs.Typescript]: "typescript.svg",
+  [Specs.Python]: "python.svg",
+  [Specs.Mongodb]: "mongodb.svg",
+  [Specs.Svelte]: "svelte.svg",
 }
 
 const getIconForTech = (tech: Specs) => {
   return iconMap[tech] || null;
+}
+
+const imageLoader = ({ src }: { src: string }) => {
+  return `https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/svgs/${src}`
 }
 
 const colorMap = {
@@ -42,14 +36,13 @@ const colorMap = {
   [Specs.Svelte]: 'var(--maroon-color)'
 }
 
-
 export default function Tag({ tech }: Props) {
   const icon = getIconForTech(tech);
   const backgroundColor = colorMap[tech];
   const tagName = Specs[tech].toString()
   return (
     <div className="tag" style={{ backgroundColor }}>
-      {icon && <Image src={icon} alt={tagName} className="tag__icon" />}
+      {icon && <Image loader={imageLoader} src={icon} alt={tagName} className="tag__icon" width={100} height={100} quality={100}/>}
       <span className="tag__name">{tagName}</span>
     </div>
   );

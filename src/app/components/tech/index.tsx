@@ -24,6 +24,7 @@ export default function Tech() {
   const imageLoader = ({ src }: { src: string}) => {
     return `https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/svgs/${src}`
   }
+
   return (
     <Container>
       <div id="tech" />
