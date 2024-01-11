@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "School dashboard",
+    "github": "https://github.com/diegorezm/school_app",
+    "tech": [
+      "Java",
+      "PostgreSQL",
+      "Tailwind",
+      "Nextjs",
+      "Typescript"
+    ],
+    "showcase": "https://www.youtube.com/watch?v=5Qfbx32a8pQ",
+    "image": "https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/proj/school-app.png"
+  },
+  {
+    "id": 2,
+    "name": "Start page",
+    "github": "https://github.com/diegorezm/start_page",
+    "tech": [
+      "Typescript",
+      "svelte"
+    ],
+    "showcase": "https://diegorezm.github.io/start_page/",
+    "image": "https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/proj/start-page.png"
+  },
+  {
+    "id": 3,
+    "name": "Social media",
+    "github": "https://github.com/diegorezm/social-media-nextjs",
+    "tech": [
+      "Tailwind",
+      "Nextjs",
+      "Typescript",
+      "Mongodb"
+    ],
+    "showcase": "https://www.youtube.com/watch?v=CrwErznp5sY",
+    "image": "https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/proj/social-media.png"
+  },
+  {
+    "id": 4,
+    "name": "Agenda app",
+    "github": "https://github.com/diegorezm/agenda-app",
+    "tech": [
+      "Tailwind",
+      "Nextjs",
+      "Typescript",
+      "Mongodb"
+    ],
+    "showcase": "https://www.youtube.com/watch?v=iH5q3USLrf0",
+    "image": "https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/proj/agenda-app.png"
+  },
+  {
+    "id": 5,
+    "name": "Cardapio app",
+    "github": "https://github.com/diegorezm/app-cardapio",
+    "tech": [
+      "Tailwind",
+      "Nextjs",
+      "Typescript",
+      "Python",
+      "PostgreSQL"
+    ],
+    "showcase": "https://www.youtube.com/watch?v=TUMEW0zo2nQ",
+    "image": "https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/proj/cardapio-app.png"
+  }
+]
+
