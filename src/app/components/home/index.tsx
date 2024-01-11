@@ -20,6 +20,10 @@ export default function Home() {
     setTimeout(() => {
       setShowModal(!showModal);
     }, 400);
+
+  }
+  const imageLoader = ({ src }: { src: string}) => {
+    return `https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/${src}`
   }
   return (
     <Container primary>
@@ -29,7 +33,7 @@ export default function Home() {
       <section className="home__wrapper">
         <div className="home__hero">
           <div className="home__image">
-            <Image src={pfp} alt="my image" className="image" />
+            <Image loader={imageLoader} src="pfp.jpg" alt="my image" className="image" width={100} height={100} quality={80}/>
           </div>
           <div className="home__text">
             <Special>
