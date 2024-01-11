@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "icon": "https://raw.githubusercontent.com/diegorezm/portifolio/d2dabcbefdda62c29eeb2909f14b753f51633e8e/src/assets/svgs/html.svg",
+    "title": "Html"
+  },
+  {
+    "id": 2,
+    "icon": "https://raw.githubusercontent.com/diegorezm/portifolio/d2dabcbefdda62c29eeb2909f14b753f51633e8e/src/assets/svgs/css.svg",
+    "title": "css3"
+  },
+  {
+    "id": 3,
+    "icon": "https://raw.githubusercontent.com/diegorezm/portifolio/d2dabcbefdda62c29eeb2909f14b753f51633e8e/src/assets/svgs/tailwind.svg",
+    "title": "Tailwind"
+  },
+  {
+    "id": 4,
+    "icon": "",
+    "title": "Nextjs"
+  },
+  {
+    "id": 5,
+    "icon": "https://raw.githubusercontent.com/diegorezm/portifolio/d2dabcbefdda62c29eeb2909f14b753f51633e8e/src/assets/svgs/javascript.svg",
+    "title": "Javascript"
+  },
+  {
+    "id": 6,
+    "icon": "https://raw.githubusercontent.com/diegorezm/portifolio/d2dabcbefdda62c29eeb2909f14b753f51633e8e/src/assets/svgs/typescript.svg",
+    "title": "Typescript"
+  },
+  {
+    "id": 7,
+    "icon": "https://raw.githubusercontent.com/diegorezm/portifolio/d2dabcbefdda62c29eeb2909f14b753f51633e8e/src/assets/svgs/react.svg",
+    "title": "React"
+  },
+  {
+    "id": 8,
+    "icon": "https://raw.githubusercontent.com/diegorezm/portifolio/d2dabcbefdda62c29eeb2909f14b753f51633e8e/src/assets/svgs/postgresql.svg",
+    "title": "PostgreSQL"
+  },
+  {
+    "id": 9,
+    "icon": "https://raw.githubusercontent.com/diegorezm/portifolio/d2dabcbefdda62c29eeb2909f14b753f51633e8e/src/assets/svgs/mongodb.svg",
+    "title": "Mongodb"
+  },
+  {
+    "id":10,
+    "icon": "https://raw.githubusercontent.com/diegorezm/portifolio/d2dabcbefdda62c29eeb2909f14b753f51633e8e/src/assets/svgs/svelte.svg",
+    "title": "Svelte"
+  }
+]
+
