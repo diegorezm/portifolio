@@ -3,7 +3,7 @@ import { useState } from "react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { formSchema, typeFormSchema } from "@/lib"
-import { sendEmail, Response } from "@/actions"
+import { sendEmail, Response } from "@/actions/email"
 import toast from "react-hot-toast"
 
 import LabelInput from "../labelInput"

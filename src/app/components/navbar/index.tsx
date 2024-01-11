@@ -4,13 +4,30 @@ import { useEffect, useState } from 'react'
 
 import useTheme from '@/app/hooks/useTheme'
 import './navbar.css'
-import { links } from '@/app/content/linksList'
 import { goTo } from '@/lib'
 
 export default function Navbar() {
+
   const [showMobile, setShowMobile] = useState(false)
   const { theme, toggleTheme } = useTheme()
   const iconSize = 25
+
+
+  const links = [
+    {
+      id: 1,
+      link: 'projects'
+    },
+    {
+      id: 2,
+      link: 'tech'
+    },
+    {
+      id: 3,
+      link: 'contact'
+    }
+  ]
+
 
   const showHideMobile = () => {
     setShowMobile(!showMobile)
