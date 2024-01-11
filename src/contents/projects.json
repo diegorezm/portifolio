@@ -11,7 +11,7 @@
       "Typescript"
     ],
     "showcase": "https://www.youtube.com/watch?v=5Qfbx32a8pQ",
-    "image": "https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/proj/school-app.png"
+    "image": "school-app.png"
   },
   {
     "id": 2,
@@ -19,10 +19,10 @@
     "github": "https://github.com/diegorezm/start_page",
     "tech": [
       "Typescript",
-      "svelte"
+      "Svelte"
     ],
     "showcase": "https://diegorezm.github.io/start_page/",
-    "image": "https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/proj/start-page.png"
+    "image": "start-page.png"
   },
   {
     "id": 3,
@@ -35,7 +35,7 @@
       "Mongodb"
     ],
     "showcase": "https://www.youtube.com/watch?v=CrwErznp5sY",
-    "image": "https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/proj/social-media.png"
+    "image": "social-media.png"
   },
   {
     "id": 4,
@@ -48,7 +48,7 @@
       "Mongodb"
     ],
     "showcase": "https://www.youtube.com/watch?v=iH5q3USLrf0",
-    "image": "https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/proj/agenda-app.png"
+    "image": "agenda-app.png"
   },
   {
     "id": 5,
@@ -62,7 +62,7 @@
       "PostgreSQL"
     ],
     "showcase": "https://www.youtube.com/watch?v=TUMEW0zo2nQ",
-    "image": "https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/proj/cardapio-app.png"
+    "image": "cardapio-app.png"
   }
 ]
 
