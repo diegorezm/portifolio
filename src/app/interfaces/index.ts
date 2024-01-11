@@ -1,6 +1,4 @@
-import { StaticImageData } from "next/image";
-
-export enum specs {
+export enum Specs {
   Java,
   PostgreSQL,
   Tailwind,
@@ -8,17 +6,16 @@ export enum specs {
   Typescript,
   Python,
   Mongodb,
-  svelte
+  Svelte
 }
 
 export interface ProjectsInterface {
   id: number,
   name: string,
   github: string,
-  description?: string,
   showcase: string,
-  tech: specs[],
-  image: StaticImageData
+  tech: Specs[],
+  image: string
 }
 
 export interface TechInterface {
