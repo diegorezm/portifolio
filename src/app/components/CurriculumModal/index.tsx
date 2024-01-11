@@ -24,7 +24,7 @@ export default function CurriculumModal({ toggleModal }: props) {
         </div>
         <div className="separator"></div>
         <div className="modal__buttons">
-          <a className="modal__anchor anchor__ok" href="https://raw.githubusercontent.com/diegorezm/portifolio/main/src/assets/curriculum.pdf" rel="noopener noreferrer">Ok</a>
+          <a className="modal__anchor anchor__ok" href="https://raw.githubusercontent.com/diegorezm/portifolio/curriculum/src/assets/curriculum.pdf" rel="noopener noreferrer">Ok</a>
           <a className="modal__anchor anchor__cancel" onClick={toggleModal}>Cancel</a>
         </div>
       </div>
