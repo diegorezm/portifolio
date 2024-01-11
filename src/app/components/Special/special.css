@@ -1,6 +1,0 @@
-.special{
-    display:inline;
-    background: -webkit-linear-gradient(var(--pink-color), var(--mauve-color));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
