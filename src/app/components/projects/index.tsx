@@ -1,12 +1,28 @@
-import Image from "next/image";
-import { projectList as projects } from "@/app/content/projectList";
-import Container from "../container";
+'use client'
+
+import Image from "next/image"
+import Container from "../container"
 import './projects.css'
-import Title from "../Title";
-import Subtitle from "../subtitle";
-import Tag from "../tags";
+import Title from "../Title"
+import Subtitle from "../subtitle"
+import Tag from "../tags"
+import { loadProjectsData } from "@/actions/content"
+import { useCallback, useEffect, useState } from "react"
+import { ProjectsInterface } from "@/app/interfaces"
 
 export default function Projects() {
+  const [projects, setProjects] = useState<ProjectsInterface[]>([])
+  const load = useCallback(async () => {
+    const data = await loadProjectsData()
+    setProjects(data)
+  }, [])
+
+  useEffect(() => {
+    load()
+  }, [load])
+  function imageLoader({ src }) {
+    return `https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/proj/${src}`
+  }
   return (
     <Container primary={false}>
       <div id="projects" />
@@ -19,7 +35,7 @@ export default function Projects() {
               <li key={id} className="list__item__wrapper">
                 <h1>{name}</h1>
                 <div className="list__image__wrapper">
-                  <Image src={image} alt="Project image" className="list__image" placeholder="blur" />
+                  <Image loader={imageLoader} src={"social-media.png"} alt="Image project" className="list__image"  width={100} height={100} quality={80} />
                 </div>
                 <div className="list__anchor__action">
                   <a href={github} target="_blank">Code</a>
@@ -34,7 +50,6 @@ export default function Projects() {
                     <Tag tech={item} key={index} />
                   ))}
                 </div>
-
               </li>
             ))
           }
