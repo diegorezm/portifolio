@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { specs } from '@/app/interfaces';
+import { Specs } from '@/app/interfaces';
 import './tag.css';
 
 import javaIcon from '@/assets/svgs/java.svg';
@@ -13,67 +13,44 @@ import mongodbIcon from '@/assets/svgs/mongodb.svg';
 import svelteIcon from '@/assets/svgs/svelte.svg';
 
 interface Props {
-  tech: specs;
+  tech: Specs;
 }
 
 const iconMap = {
-  [specs.Java]: javaIcon,
-  [specs.PostgreSQL]: postgreSqlIcon,
-  [specs.Tailwind]: tailwindIcon,
-  [specs.Nextjs]: nextIcon,
-  [specs.Typescript]: typescriptIcon,
-  [specs.Python]: pythonicon,
-  [specs.Mongodb]: mongodbIcon,
-  [specs.svelte]: svelteIcon,
+  [Specs.Java]: javaIcon,
+  [Specs.PostgreSQL]: postgreSqlIcon,
+  [Specs.Tailwind]: tailwindIcon,
+  [Specs.Nextjs]: nextIcon,
+  [Specs.Typescript]: typescriptIcon,
+  [Specs.Python]: pythonicon,
+  [Specs.Mongodb]: mongodbIcon,
+  [Specs.Svelte]: svelteIcon,
 }
 
-const getIconForTech = (tech: specs) => {
+const getIconForTech = (tech: Specs) => {
   return iconMap[tech] || null;
 }
 
-const getTechName = (tech: specs) => {
-  switch (tech) {
-    case specs.Java:
-      return 'Java';
-    case specs.PostgreSQL:
-      return 'PostgreSQL';
-    case specs.Tailwind:
-      return 'Tailwind';
-    case specs.Nextjs:
-      return 'Next.js';
-    case specs.Typescript:
-      return 'TypeScript';
-    case specs.Python:
-      return 'Python';
-    case specs.Mongodb:
-      return 'MongoDB';
-    case specs.svelte:
-      return 'Svelte';
-    default:
-      return '';
-  }
+const colorMap = {
+  [Specs.Java]: 'var(--red-color)',
+  [Specs.PostgreSQL]: 'var(--blue-color)',
+  [Specs.Tailwind]: 'var(--teal-color)',
+  [Specs.Nextjs]: 'var(--grey-color)',
+  [Specs.Typescript]: 'var(--sapphire-color)',
+  [Specs.Python]: 'var(--yellow-color)',
+  [Specs.Mongodb]: 'var(--green-color)',
+  [Specs.Svelte]: 'var(--maroon-color)'
 }
 
-const colorMap = {
-  [specs.Java]: 'var(--red-color)',
-  [specs.PostgreSQL]: 'var(--blue-color)',
-  [specs.Tailwind]: 'var(--teal-color)',
-  [specs.Nextjs]: 'var(--grey-color)',
-  [specs.Typescript]: 'var(--sapphire-color)',
-  [specs.Python]: 'var(--yellow-color)',
-  [specs.Mongodb]: 'var(--green-color)',
-  [specs.svelte]: 'var(--maroon-color)'
-}
 
 export default function Tag({ tech }: Props) {
-  const icon = getIconForTech(tech)
-  const techName = getTechName(tech)
-  const backgroundColor = colorMap[tech]
+  const icon = getIconForTech(tech);
+  const backgroundColor = colorMap[tech];
+  const tagName = Specs[tech].toString()
   return (
     <div className="tag" style={{ backgroundColor }}>
-      {icon && <Image src={icon} alt={techName} className="tag__icon" />}
-      <span className="tag__name">{techName}</span>
+      {icon && <Image src={icon} alt={tagName} className="tag__icon" />}
+      <span className="tag__name">{tagName}</span>
     </div>
-  )
+  );
 }
-
