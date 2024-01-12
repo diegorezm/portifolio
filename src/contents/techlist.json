@@ -48,6 +48,11 @@
     "id": 10,
     "icon": "svelte.svg",
     "title": "Svelte"
+  },
+  {
+    "id": 11,
+    "icon": "python.svg",
+    "title": "Python"
   }
 ]
 
