@@ -17,7 +17,7 @@ export default function LabelInput({ label, name, error, register, error_message
   return (
     <div className='input__wrapper'>
       <label htmlFor={name}>{label}</label>
-      <input  {...register(name, { required: true })} placeholder={placeholder} />
+      <input  {...register(name, { required: true })} placeholder={placeholder} id={name}/>
       {error && <Error message={error_message}/>}
     </div>
   )
