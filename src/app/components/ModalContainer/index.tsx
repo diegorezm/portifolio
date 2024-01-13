@@ -1,8 +1,14 @@
 import './modalContainer.css'
-export default function ModalContainer({ children }: { children: React.ReactNode }) {
+interface Props {
+  toggle: () => void;
+  children: React.ReactNode
+}
+export default function ModalContainer({ toggle, children }: Props) {
   return (
     <div className='modal__container'>
-      {children}
+      <div className="clickzone" onClick={toggle}>
+        {children}
+      </div>
     </div>
   )
 }

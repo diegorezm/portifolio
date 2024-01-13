@@ -13,7 +13,7 @@ export default function CurriculumModal({ toggleModal }: props) {
     };
   }, [])
   return (
-    <ModalContainer>
+    <ModalContainer toggle={toggleModal}>
       <div className="modal__dialog">
         <div className='modal__title'>
           Curriculum
