@@ -5,21 +5,16 @@ import Container from "../container";
 import Title from "../Title";
 import Subtitle from "../subtitle";
 import './tech.css'
-import { useCallback, useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import { TechInterface } from "@/app/interfaces";
 import { loadTechData } from "@/actions/content";
 
 export default function Tech() {
   const [techList, setTechList] = useState<TechInterface[]>([])
 
-  const load = useCallback(async () => {
-    const data = await loadTechData()
-    setTechList(data)
-  }, [])
-
   useEffect(() => {
-    load()
-  }, [load])
+    loadTechData().then(response => setTechList(response))
+  }, [])
 
   const imageLoader = ({ src }: { src: string}) => {
     return `https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/svgs/${src}`

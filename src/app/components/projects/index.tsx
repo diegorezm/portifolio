@@ -7,21 +7,17 @@ import Title from "../Title"
 import Subtitle from "../subtitle"
 import Tag from "../tags"
 import { loadProjectsData } from "@/actions/content"
-import { useCallback, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { ProjectsInterface } from "@/app/interfaces"
 
 export default function Projects() {
   const [projects, setProjects] = useState<ProjectsInterface[]>([])
-  const load = useCallback(async () => {
-    const data = await loadProjectsData()
-    setProjects(data)
-  }, [])
 
   useEffect(() => {
-    load()
-  }, [load])
-  function imageLoader({ src }: { src: string}) {
-    console.log(src)
+    loadProjectsData().then(response => setProjects(response))
+  }, [])
+
+  function imageLoader({ src }: { src: string }) {
     return `https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/proj/${src}`
   }
   return (
@@ -36,7 +32,7 @@ export default function Projects() {
               <li key={id} className="list__item__wrapper">
                 <h1>{name}</h1>
                 <div className="list__image__wrapper">
-                  <Image loader={imageLoader} src={image} alt="Image project" className="list__image"  width={100} height={100} quality={80} />
+                  <Image loader={imageLoader} src={image} alt="Image project" className="list__image" width={100} height={100} quality={80} />
                 </div>
                 <div className="list__anchor__action">
                   <a href={github} target="_blank">Code</a>
