@@ -9,6 +9,7 @@ import Tag from "../tags"
 import { loadProjectsData } from "@/actions/content"
 import { useEffect, useState } from "react"
 import { ProjectsInterface } from "@/app/interfaces"
+import { motion } from "framer-motion"
 
 export default function Projects() {
   const [projects, setProjects] = useState<ProjectsInterface[]>([])
@@ -35,12 +36,38 @@ export default function Projects() {
                   <Image loader={imageLoader} src={image} alt="Image project" className="list__image" width={100} height={100} quality={80} />
                 </div>
                 <div className="list__anchor__action">
-                  <a href={github} target="_blank">Code</a>
-                  <a href={showcase} target="_blank">Showcase</a>
+                  <motion.a
+                    whileHover={{ scale: 1.06 }}
+                    whileTap={{ scale: 0.9 }}
+                    href={github}
+                    target="_blank"
+                  >
+                    Code
+                  </motion.a>
+                  <motion.a
+                    whileHover={{ scale: 1.06 }}
+                    whileTap={{ scale: 0.9 }}
+                    href={showcase}
+                    target="_blank">
+                    Showcase
+                  </motion.a>
                 </div>
                 <div className="mobile__anchor__action">
-                  <a href={github} target="_blank">Code</a>
-                  <a href={showcase} target="_blank">Showcase</a>
+                  <motion.a
+                    whileHover={{ scale: 1.06 }}
+                    whileTap={{ scale: 0.9 }}
+                    href={github}
+                    target="_blank"
+                  >
+                    Code
+                  </motion.a>
+                  <motion.a
+                    whileHover={{ scale: 1.06 }}
+                    whileTap={{ scale: 0.9 }}
+                    href={showcase}
+                    target="_blank">
+                    Showcase
+                  </motion.a>
                 </div>
                 <div className="list__tag">
                   {tech.map((item, index) => (

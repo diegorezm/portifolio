@@ -6,20 +6,16 @@ import { IoCaretForwardSharp } from 'react-icons/io5'
 import Container from "../container"
 import Special from "../Special"
 import TypeAnimation from "../typeAnimation"
-import pfp from '@/assets/pfp.jpg'
-import './home.css'
 import { useState } from "react"
+import './home.css'
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false)
   const toggleModal = () => {
-    const scrollToTop = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-    scrollToTop()
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     setTimeout(() => {
       setShowModal(!showModal);
-    }, 400);
+    }, 200);
 
   }
   const imageLoader = ({ src }: { src: string}) => {

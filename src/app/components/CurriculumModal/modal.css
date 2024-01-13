@@ -11,6 +11,7 @@
   width: 40%;
   font-size:1.225em;
   border-radius: var(--radius);
+  transition: left 300ms linear;
 }
 
 .modal__title,
@@ -46,7 +47,6 @@
 
 .modal__anchor:hover {
   cursor: pointer;
-  transform: scale(1.08);
 }
 
 .anchor__ok{
