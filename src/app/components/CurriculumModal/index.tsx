@@ -14,7 +14,7 @@ export default function CurriculumModal({ toggleModal }: props) {
   }, [])
   return (
     <ModalContainer toggle={toggleModal}>
-      <div className="modal__dialog">
+      <div className="modal__dialog" onClick={e => e.stopPropagation()}>
         <div className='modal__title'>
           Curriculum
         </div>
