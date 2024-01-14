@@ -10,15 +10,13 @@
   border: none;
   border-radius: var(--radius);
   height: 3.5em;
-}
-
-.input__wrapper input:focus{
-  outline: none;
-  box-shadow: 0 0 2px 2px var(--pink-color);
-}
-
-.input__wrapper input::placeholder{
-  color: var(--grey-color);
+  &:focus{
+    outline: none;
+    box-shadow: 0 0 2px 2px var(--pink-color);
+  }
+  &::placeholder{
+    color: var(--grey-color);
+  }
 }
 
 .input__wrapper label{
