@@ -28,3 +28,8 @@ export const goTo = (id: string) => {
 
 }
 
+export const defaultButtonAnimation = {
+  whileHover: { scale: 1.06 },
+  whileTap: { scale: 0.9 }
+
+}

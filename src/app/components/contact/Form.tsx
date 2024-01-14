@@ -1,8 +1,9 @@
 "use client"
+import { motion } from "framer-motion"
 import { useState } from "react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
-import { formSchema, typeFormSchema } from "@/lib"
+import { defaultButtonAnimation, formSchema, typeFormSchema } from "@/lib"
 import { sendEmail, Response } from "@/actions/email"
 import toast from "react-hot-toast"
 
@@ -44,7 +45,12 @@ export function Form() {
         {errors.message && <Error message={errors.message.message} />}
       </div>
       <div className="contact__button">
-        <button type="submit" disabled={loading}>{loading ? "Loading..." : "Submit"}</button>
+        <motion.button
+          {...defaultButtonAnimation}
+          type="submit"
+          disabled={loading}>
+          {loading ? "Loading..." : "Submit"}
+        </motion.button>
       </div>
     </form>
   )

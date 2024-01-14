@@ -10,10 +10,10 @@ import { loadProjectsData } from "@/actions/content"
 import { useEffect, useState } from "react"
 import { ProjectsInterface } from "@/app/interfaces"
 import { motion } from "framer-motion"
+import { defaultButtonAnimation } from "@/lib"
 
 export default function Projects() {
   const [projects, setProjects] = useState<ProjectsInterface[]>([])
-
   useEffect(() => {
     loadProjectsData().then(response => setProjects(response))
   }, [])
@@ -37,16 +37,14 @@ export default function Projects() {
                 </div>
                 <div className="list__anchor__action">
                   <motion.a
-                    whileHover={{ scale: 1.06 }}
-                    whileTap={{ scale: 0.9 }}
+                    {...defaultButtonAnimation}
                     href={github}
                     target="_blank"
                   >
                     Code
                   </motion.a>
                   <motion.a
-                    whileHover={{ scale: 1.06 }}
-                    whileTap={{ scale: 0.9 }}
+                    {...defaultButtonAnimation}
                     href={showcase}
                     target="_blank">
                     Showcase
@@ -54,16 +52,14 @@ export default function Projects() {
                 </div>
                 <div className="mobile__anchor__action">
                   <motion.a
-                    whileHover={{ scale: 1.06 }}
-                    whileTap={{ scale: 0.9 }}
+                    {...defaultButtonAnimation}
                     href={github}
                     target="_blank"
                   >
                     Code
                   </motion.a>
                   <motion.a
-                    whileHover={{ scale: 1.06 }}
-                    whileTap={{ scale: 0.9 }}
+                    {...defaultButtonAnimation}
                     href={showcase}
                     target="_blank">
                     Showcase
@@ -82,3 +78,4 @@ export default function Projects() {
     </Container>
   )
 }
+

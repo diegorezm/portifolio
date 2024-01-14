@@ -3,6 +3,7 @@ import ModalContainer from '../ModalContainer'
 import Special from '../Special'
 import './modal.css'
 import { useEffect } from 'react'
+import { defaultButtonAnimation } from '@/lib'
 interface props {
   toggleModal: () => void
 }
@@ -56,18 +57,16 @@ export default function CurriculumModal({ toggleModal }: props) {
         <div className="separator"></div>
         <div className="modal__buttons">
           <motion.a
+            {...defaultButtonAnimation}
             className="modal__anchor anchor__ok"
             href="https://github.com/diegorezm/portifolio/raw/assets/src/assets/cv.pdf"
             rel="noopener noreferrer"
-            whileHover={{ scale: 1.06 }}
-            whileTap={{ scale: 0.9 }}
           >
             Ok</motion.a>
           <motion.a
+            {...defaultButtonAnimation}
             className="modal__anchor anchor__cancel"
             onClick={toggleModal}
-            whileHover={{ scale: 1.06 }}
-            whileTap={{ scale: 0.9 }}
           >
             Cancel
           </motion.a>

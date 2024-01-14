@@ -76,11 +76,6 @@
   transition-duration: 150ms;
 }
 
-
-.contact__button button:hover{
-  transform: scale(1.1);
-}
-
 .contact__button button:disabled{
   opacity: 0.25;
   color:var(--crust);
