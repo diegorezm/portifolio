@@ -1,4 +1,5 @@
 "use client"
+import { motion } from 'framer-motion'
 import { IoClose, IoHome, IoMenu, IoMoon, IoSunny } from 'react-icons/io5'
 import { useEffect, useState } from 'react'
 
@@ -68,7 +69,9 @@ export default function Navbar() {
         {theme === 'dark' ? <IoMoon className="icon" size={iconSize} /> : <IoSunny className="icon" size={iconSize} />}
       </div>
 
-      <div className='mobile__container'>
+      <motion.div
+
+        className='mobile__container'>
         <div
           className="mobile__icon"
           onClick={showHideMobile}
@@ -77,27 +80,52 @@ export default function Navbar() {
           {showMobile ? <IoClose size={iconSize} /> : <IoMenu size={iconSize} />}
         </div>
         {showMobile && (
-          <ul className="mobile__links" id="mobile__links">
+          <motion.ul
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="mobile__links" id="mobile__links">
             {
 
-              links.map(({ id, link }) =>
+              links.map(({ id, link }, i) =>
               (
-                <li key={id}>
+                <motion.li
+                  initial={{ scale: 0, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+
+                  transition={{
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 20,
+                    delay: 0.1 + i / 10,
+                  }}
+                  key={id}>
                   <button
                     onClick={() => handleClickMobile(link)}
                   >
                     {link}
                   </button>
-                </li>)
+                </motion.li>)
               )
             }
-            <li onClick={toggleThemeMobile}>
+            <motion.li
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+                delay: 0.1 + links.length / 10,
+              }}
+              onClick={toggleThemeMobile}
+            >
               Theme
-            </li>
-          </ul>
+            </motion.li>
+          </motion.ul>
 
         )}
-      </div>
+      </motion.div>
     </nav >
   )
 }
