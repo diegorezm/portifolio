@@ -1,5 +1,4 @@
 import { ProjectsInterface, Specs } from "@/app/interfaces"
-import axios from "axios"
 
 const converToEnum = (tag: string): Specs | undefined => {
   type SpecsKeys = keyof typeof Specs
@@ -19,8 +18,13 @@ const getProjectsData = async () => {
     tech: string[],
     image: string
   }
-  const res = await axios.get("https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/contents/projects.json")
-  const data: Response[] = await res.data
+  const res = await fetch("https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/contents/projects.json", {
+    cache: "force-cache",
+    next: {
+      revalidate: 60 * 60 * 24
+    }
+  })
+  const data: Response[] = await res.json()
   return data
 }
 
@@ -45,8 +49,13 @@ export const loadTechData = async () => {
     icon: string,
     title: string
   }
-  const res = await axios.get("https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/contents/techlist.json") 
-  const data: Response[] = await res.data
+  const res = await fetch("https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/contents/techlist.json", {
+    cache: "force-cache",
+    next: {
+      revalidate: 60 * 60 * 24
+    }
+  })
+  const data: Response[] = await res.json()
   return data
 }
 
