@@ -62,7 +62,7 @@ li > button{
   z-index: 3;
   &:hover{
     cursor:pointer;
-    color:var(--blue-color);
+    color:var(--pink-color);
   }
 }
 
