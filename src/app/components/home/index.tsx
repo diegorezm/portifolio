@@ -18,7 +18,7 @@ export default function Home() {
     }, 200);
 
   }
-  const imageLoader = ({ src }: { src: string}) => {
+  const imageLoader = ({ src }: { src: string }) => {
     return `https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/${src}`
   }
   return (
@@ -28,9 +28,11 @@ export default function Home() {
       <div id="home" />
       <section className="home__wrapper">
         <div className="home__hero">
+
           <div className="home__image">
-            <Image loader={imageLoader} src="pfp.jpg" alt="my image" className="image" width={100} height={100} quality={80}/>
+            <Image loader={imageLoader} src="pfp.jpg" alt="my image" className="image" width={100} height={100} quality={80} />
           </div>
+
           <div className="home__text">
             <Special>
               <TypeAnimation
@@ -38,6 +40,9 @@ export default function Home() {
                 delay={200}
               />
             </Special>
+            <p>
+              Hello! My name is Diego, and I&apos;m a passionate <Special>junior Fullstack software developer</Special> based in Brazil.I have a strong foundation in web development, with a primary focus on <Special>JavaScript</Special> and <Special> TypeScript.</Special>
+            </p>
             <div className="home__button">
               <button onClick={toggleModal}>
                 <span>
@@ -48,11 +53,6 @@ export default function Home() {
             </div>
           </div>
 
-        </div>
-        <div className="home__hero__text">
-          <p>
-            Hello! My name is Diego, and I&apos;m a passionate <Special>junior Fullstack software developer</Special> based in Brazil.I have a strong foundation in web development, with a primary focus on <Special>JavaScript</Special> and <Special> TypeScript.</Special>
-          </p>
         </div>
 
       </section>
