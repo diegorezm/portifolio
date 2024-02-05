@@ -3,6 +3,7 @@
     "id": 1,
     "name": "School dashboard",
     "github": "https://github.com/diegorezm/school_app",
+    "description": "Application developed with the aim of studying Java and how to create an API using the language. This application implements CRUD functionalities, including secure authentication for users.",
     "tech": [
       "Java",
       "PostgreSQL",
@@ -17,6 +18,7 @@
     "id": 2,
     "name": "Start page",
     "github": "https://github.com/diegorezm/start_page",
+    "description": "This is a simple browser start page written in svelte, capable of basic customization.",
     "tech": [
       "Typescript",
       "Svelte"
@@ -26,21 +28,9 @@
   },
   {
     "id": 3,
-    "name": "Social media",
-    "github": "https://github.com/diegorezm/social-media-nextjs",
-    "tech": [
-      "Tailwind",
-      "Nextjs",
-      "Typescript",
-      "Mongodb"
-    ],
-    "showcase": "https://www.youtube.com/watch?v=CrwErznp5sY",
-    "image": "social-media.png"
-  },
-  {
-    "id": 4,
     "name": "Agenda app",
     "github": "https://github.com/diegorezm/agenda-app",
+  "description": "An application developed to study Next.js, capable of managing a MongoDB database with user authentication. It features an interface that enables users to to manage their contacts.",
     "tech": [
       "Tailwind",
       "Nextjs",
@@ -51,9 +41,10 @@
     "image": "agenda-app.png"
   },
   {
-    "id": 5,
+    "id": 4,
     "name": "Cardapio app",
     "github": "https://github.com/diegorezm/app-cardapio",
+    "description": "Python application developed using the Flask framework. Its primary function is to create and manage PostgreSQL tables.",
     "tech": [
       "Tailwind",
       "Nextjs",
