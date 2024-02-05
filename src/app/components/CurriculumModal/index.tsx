@@ -3,34 +3,11 @@ import ModalContainer from '../ModalContainer'
 import Special from '../Special'
 import './modal.css'
 import { useEffect } from 'react'
-import { defaultButtonAnimation } from '@/lib'
+import { defaultButtonAnimation, dropInAnimation } from '@/lib'
 interface props {
   toggleModal: () => void
 }
 export default function CurriculumModal({ toggleModal }: props) {
-
-  const dropIn = {
-    hidden: {
-      y: "-100vh",
-      opacity: 0,
-    },
-    visible: {
-      y: "0",
-      opacity: 1,
-      transition: {
-        duration: 0.1,
-        type: "spring",
-        damping: 25,
-        stiffness: 500,
-      },
-    },
-    exit: {
-      y: "100vh",
-      opacity: 0,
-    },
-  };
-
-
   useEffect(() => {
     document.body.classList.add('modal__open');
     return () => {
@@ -40,7 +17,7 @@ export default function CurriculumModal({ toggleModal }: props) {
   return (
     <ModalContainer toggle={toggleModal}>
       <motion.div
-        variants={dropIn}
+        variants={dropInAnimation}
         initial="hidden"
         animate="visible"
         exit="exit"
