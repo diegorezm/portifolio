@@ -6,6 +6,7 @@ import Tag from '../tags';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { defaultButtonAnimation, dropInAnimation } from '@/lib';
+import { IoClose } from 'react-icons/io5';
 interface Props {
   toggleModal: () => void;
   project: ProjectsInterface
@@ -23,7 +24,6 @@ export default function DetailsModal({ toggleModal, project }: Props) {
   function imageLoader({ src }: { src: string }) {
     return `https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/proj/${src}`
   }
-
   return (
     <ModalContainer toggle={toggleModal}>
       <motion.section className="details__container"
@@ -33,6 +33,14 @@ export default function DetailsModal({ toggleModal, project }: Props) {
         exit="exit"
         onClick={e => e.stopPropagation()}
       >
+        <div className='details__close'>
+          <motion.button
+            {...defaultButtonAnimation}
+            onClick={toggleModal}
+          >
+            <IoClose />
+          </motion.button>
+        </div>
         <div className="details__title">
           <h2>{project.name}</h2>
         </div>
@@ -56,7 +64,9 @@ export default function DetailsModal({ toggleModal, project }: Props) {
 
         </div>
         <div className="details__description">
-          descr
+          <p>
+            {project.description}
+          </p>
         </div>
         <div className="details__tags">
           {project.tech.map((item, index) => (
