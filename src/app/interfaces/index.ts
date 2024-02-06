@@ -14,6 +14,7 @@ export interface ProjectsInterface {
   name: string,
   github: string,
   showcase: string,
+  description: string,
   tech: Specs[],
   image: string
 }
