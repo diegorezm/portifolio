@@ -98,8 +98,23 @@ body{
   height: 100vh;
   font-size: 1em;
   scroll-behavior: smooth;
+  /* firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--fg-color) var(--bg-color);
 }
 
 a{
   color:var(--fg-color);
+}
+
+/* chrome  */
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--fg-color);
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
 }
