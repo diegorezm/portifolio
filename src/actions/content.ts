@@ -15,15 +15,17 @@ const getProjectsData = async () => {
     name: string,
     github: string,
     showcase: string,
+    description: string,
     tech: string[],
     image: string
   }
   const res = await fetch("https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/contents/projects.json", {
     cache: "force-cache",
     next: {
-      revalidate: 60 * 60 * 24
+      revalidate: 60 * 60 * 12
     }
   })
+
   const data: Response[] = await res.json()
   return data
 }

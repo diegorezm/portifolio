@@ -21,6 +21,7 @@ export default function Projects() {
       showcase:"",
       github:"",
       image:"",
+      description: "",
       tech:[]
       })
   const [detailsModal, setDetailsModal] = useState(false)
@@ -46,7 +47,7 @@ export default function Projects() {
         < Subtitle message="Apps i made with the purpose of studying programming!" />
         <ul className="projects__list">
           {
-            projects.map(({ id, name, tech, image, github, showcase }) => (
+            projects.map(({ id, name, tech, image, github, showcase , description}) => (
               <li key={id} className="list__item__wrapper">
                 <h1>{name}</h1>
                 <div className="list__image__wrapper">
@@ -57,7 +58,7 @@ export default function Projects() {
                   {...defaultButtonAnimation}
                   onClick={() => {
                     toggleModal()
-                    setDetails({ id, name, image, github, showcase, tech })
+                    setDetails({ id, name, image, github, showcase, tech , description})
                   }}
                 >
                   Details
