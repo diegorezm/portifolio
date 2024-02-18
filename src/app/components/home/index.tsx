@@ -11,19 +11,12 @@ import './home.css'
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false)
-  const toggleModal = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    setTimeout(() => {
-      setShowModal(!showModal);
-    }, 200);
-
-  }
   const imageLoader = ({ src }: { src: string }) => {
     return `https://raw.githubusercontent.com/diegorezm/portifolio/assets/src/assets/${src}`
   }
   return (
     <Container primary>
-      {showModal && <CurriculumModal toggleModal={toggleModal} />}
+      {showModal && <CurriculumModal toggleModal={() => setShowModal(!showModal)} />}
 
       <div id="home" />
       <section className="home__wrapper">
@@ -44,7 +37,7 @@ export default function Home() {
               Hello! My name is Diego, and I&apos;m a passionate <Special>junior Fullstack software developer</Special> based in Brazil.I have a strong foundation in web development, with a primary focus on <Special>JavaScript</Special> and <Special> TypeScript.</Special>
             </p>
             <div className="home__button">
-              <button onClick={toggleModal}>
+              <button onClick={() => setShowModal(!showModal)}>
                 <span>
                   Curriculum
                 </span>
@@ -52,9 +45,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-
         </div>
-
       </section>
     </Container>
   )
