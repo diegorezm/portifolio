@@ -60,7 +60,7 @@
 
 .separator{
   background-color: var(--fg-color);
-  height:0.01em;
+  height:0.05em;
   width: 100%;
 }
 
