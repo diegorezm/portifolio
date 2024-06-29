@@ -1,4 +1,3 @@
-"use client";
 import { useState, useEffect } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import NavItem from "./nav-item";

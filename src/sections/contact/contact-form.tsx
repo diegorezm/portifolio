@@ -1,4 +1,3 @@
-"use client";
 import { z } from "zod";
 import ContactInput from "./contact-input";
 import ContactFeedback from "./contact-feedback";

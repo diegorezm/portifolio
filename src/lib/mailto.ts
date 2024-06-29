@@ -1,5 +1,3 @@
-"use server"
-
 import axios from "axios"
 
 const mailto = async (data: { name: string, email: string, message: string }) => {
