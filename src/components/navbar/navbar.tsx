@@ -46,9 +46,9 @@ export default function Navbar() {
 
         <div
           onClick={openCloseMobileMenu}
-          className="text-center lg:hidden rounded-lg bg-transparent hover:cursor-pointer"
+          className="text-center lg:hidden rounded-lg bg-transparent hover:cursor-pointer text-2xl"
         >
-          <IoMenu className={"text-cls-foreground w-7 h-7"} />
+          <IoMenu />
         </div>
       </nav>
       {openMobileMenu && (
@@ -58,12 +58,11 @@ export default function Navbar() {
             onClick={openCloseMobileMenu}
           />
           <div className="fixed flex flex-col items-center w-full min-h-1/2 z-20 bg-cls-background text-lg font-bold animate-slideIn">
-            <div className="flex justify-between items-center w-full px-4 py-2 text-xl shadow-black shadow-sm">
+            <div className="flex justify-between items-center w-full px-6 py-2 text-xl shadow-black shadow-sm">
               <Logo />
-              <IoClose
-                className="w-7 h-7 hover:cursor-pointer"
-                onClick={openCloseMobileMenu}
-              />
+              <button onClick={openCloseMobileMenu} className={"text-2xl"}>
+                <IoClose />
+              </button>
             </div>
             <NavItem
               path="/#home"
