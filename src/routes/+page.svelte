@@ -8,7 +8,7 @@ import HomeSection from "../sections/home/home-section.svelte";
 
 <div>
   <Navbar/>
-  <div>
+  <div class="space-y-4">
     <HomeSection/>
     <AboutSection/>
     <ProjectSection/>

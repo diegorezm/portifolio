@@ -54,7 +54,7 @@
 
 html,
 body {
-  line-height: 1.4;
+  line-height: 1.5;
   scrollbar-width: thin;
   scrollbar-color: var(--foreground) var(--background);
   scroll-behavior: smooth;

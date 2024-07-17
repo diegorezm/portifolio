@@ -22,7 +22,7 @@ import PurpleText from "../../components/purple-text/purple-text.svelte";
       <h1 class="font-primary font-semibold text-4xl text-center">
         <PurpleText> About me </PurpleText>
       </h1>
-      <p class="font-secondary text-2xl text-cls-foreground-secondary">
+      <p class="font-secondary text-2xl text-cls-foreground-secondary text-center md:text-left">
         I am a Full Stack Developer from Brazil, currently studying Systems
         Analysis and Development at UNITAU. I have hands-on experience with
         Java and TypeScript, specializing in frameworks like Spring Boot and
@@ -31,7 +31,7 @@ import PurpleText from "../../components/purple-text/purple-text.svelte";
         Excel. I primarily use Linux as my operating system. I am eager to
         apply my knowledge and grow professionally in new opportunities.
       </p>
-      <div class="flex space-x-4 text-5xl text-cls-foreground-secondary">
+      <div class="flex space-x-4 text-5xl text-cls-foreground-secondary justify-center md:justify-start">
         <a
           href="https://www.linkedin.com/in/diegorezm/"
           class="hover:text-cls-foreground"
