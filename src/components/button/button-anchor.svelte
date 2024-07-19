@@ -3,7 +3,7 @@
   export let label: string;
   export let href: string;
   export let icon: string | null = null;
-  export let toBlank = true;
+  export let toBlank = false;
 
   let className = "w-full text-center";
   if (icon) {

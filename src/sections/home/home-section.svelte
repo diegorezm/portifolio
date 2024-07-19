@@ -21,7 +21,7 @@ import PurpleText from "../../components/purple-text/purple-text.svelte";
           />
         </Button.Root>
         <Button.Root variant="dark" className="w-fit px-1 md:w-1/4 h-12">
-          <Button.Anchor label="Contact me!" href="/#contact" />
+          <Button.Anchor label="Contact me!" href="#contact" />
         </Button.Root>
       </div>
     </div>

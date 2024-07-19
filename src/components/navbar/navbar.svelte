@@ -58,10 +58,10 @@
             <Icon icon="ion:close"/>
           </button>
         </div>
-        <NavItem path="/#home" title="Home" isMobile on:click={openCloseMobileMenu} />
-        <NavItem path="/#about" title="About" isMobile on:click={openCloseMobileMenu} />
-        <NavItem path="/#projects" title="Projects" isMobile on:click={openCloseMobileMenu} />
-        <NavItem path="/#contact" title="Contact" isMobile on:click={openCloseMobileMenu} />
+        <NavItem path="/#home" title="Home" isMobile onClick={openCloseMobileMenu} />
+        <NavItem path="/#about" title="About" isMobile onClick={openCloseMobileMenu} />
+        <NavItem path="/#projects" title="Projects" isMobile onClick={openCloseMobileMenu} />
+        <NavItem path="/#contact" title="Contact" isMobile onClick={openCloseMobileMenu} />
       </div>
     </div>
   {/if}
