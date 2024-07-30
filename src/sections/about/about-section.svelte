@@ -22,7 +22,7 @@ import PurpleText from "../../components/purple-text/purple-text.svelte";
       <h1 class="font-primary font-semibold text-4xl text-center">
         <PurpleText> About me </PurpleText>
       </h1>
-      <p class="font-secondary text-2xl text-cls-foreground-secondary text-center md:text-left">
+      <p class="font-secondary text-2xl text-cls-foreground-secondary text-left">
         I am a Full Stack Developer from Brazil, currently studying Systems
         Analysis and Development at UNITAU. I have hands-on experience with
         Java and TypeScript, specializing in frameworks like Spring Boot and
