@@ -5,7 +5,7 @@
   const techStr = project.tech.join(", ");
 </script>
 
-    <div class="w-full h-full bg-light-card shadow-default-card rounded-lg p-2 space-y-1 2xl:p-4 2xl:space-y-3">
+    <div class="w-full h-full bg-light-card shadow-default-card rounded-lg p-2 space-y-2 2xl:p-4 2xl:space-y-3">
       <p class="text-cls-light-green text-md 2xl:text-lg">{techStr}</p>
       <h1 class="text-xl 2xl:text-2xl">{project.name}</h1>
       <p class="font-secondary text-lg 2xl:text-xl text-cls-foreground-secondary">
@@ -20,7 +20,7 @@
             toBlank
           />
         </Button.Root>
-        <Button.Root variant="outline" className="w-1/4 2xl:w-1/3 h-10">
+        <Button.Root variant="pink" className="w-1/4 2xl:w-1/3 h-10">
           <Button.Anchor
             label="details"
             href={project.details}

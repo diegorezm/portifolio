@@ -4,14 +4,14 @@
   export let className = "";
 
   const variantClass = {
-    pink: "bg-pink-gradient text-cls-foreground",
-    dark: "bg-dark-gradient text-cls-foreground",
+    pink: "bg-pink-gradient text-cls-foreground hover:opacity-80 transition-all",
+    dark: "bg-dark-gradient text-cls-foreground hover:opacity-75 transition-all",
     outline:
-      "border border-cls-background text-cls-foreground hover:border-cls-foreground",
+      "border text-cls-foreground border-cls-foreground hover:opacity-70 transition-all",
   }[variant];
 </script>
 
 <div 
-  class={`flex justify-center items-center font-secondary font-semibold shadow-default rounded-lg ${variantClass} ${className}`}>
+  class={`flex justify-center items-center font-secondary font-semibold rounded-lg ${variantClass} ${className}`}>
     <slot />
 </div>
