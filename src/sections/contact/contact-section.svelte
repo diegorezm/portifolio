@@ -41,7 +41,6 @@
               class="flex items-center gap-1 hover:opacity-80"
             >
               <Icon icon={socialItem.icon} />
-              <span class="hidden md:block">{socialItem.label}</span>
             </a>
           </li>
         {/each}
