@@ -32,6 +32,16 @@ const projects: Project[] = [
       "https://raw.githubusercontent.com/diegorezm/start_page/main/public/showcase.png",
   },
   {
+    id: 2,
+    name: "WallpaperCL",
+    sourceCode: "https://github.com/diegorezm/wallpapercl",
+    description:
+      "WallpaperCL is a lightweight wallpaper management application built using modern technologies like Rust, TypeScript, and React, powered by Tauri. Designed for Linux users, it offers a seamless experience for organizing and setting wallpapers.",
+    tech: ["Rust", "Typescript", "React"],
+    details: "https://www.youtube.com/watch?v=n_2mIcaMpBM",
+    image: "https://github.com/diegorezm/wallpapercl/blob/main/showcase.png",
+  },
+  {
     id: 3,
     name: "Agenda app",
     sourceCode: "https://github.com/diegorezm/agenda-app",
