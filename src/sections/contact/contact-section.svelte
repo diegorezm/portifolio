@@ -31,21 +31,19 @@
   <Container.Body
     className="flex flex-col items-center justify-center mb-2 gap-4"
   >
-    <div class="flex items-center lg:justify-center">
-      <ul class="flex gap-4">
+      <ul class="flex space-x-4 text-4xl text-cls-foreground-secondary justify-center md:justify-start">
         {#each socialLinks as socialItem}
-          <li class="text-4xl md:text-2xl 2xl:text-3xl">
+          <li>
             <a
               href={socialItem.href}
               target="_blank"
-              class="flex items-center gap-1 hover:opacity-80"
+              class="flex items-center gap-1 hover:text-cls-foreground"
             >
               <Icon icon={socialItem.icon} />
             </a>
           </li>
         {/each}
       </ul>
-    </div>
     <ContactForm />
   </Container.Body>
 </Container.Root>
