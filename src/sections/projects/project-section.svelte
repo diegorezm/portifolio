@@ -8,7 +8,7 @@
   <Container.Title>Projects</Container.Title>
   <Container.Body>
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center w-full gap-2"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center w-full gap-4"
     >
       {#each projects as project}
         <ProjectItem {project} />

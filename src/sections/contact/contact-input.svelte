@@ -6,12 +6,12 @@
   export let isTextArea = false;
 
   const inpClass =
-    "bg-[#1F2430] rounded-lg p-2 shadow-default focus:outline-none border-2 border-cls-grey focus:border-2 focus:border-cls-light-green ";
+    "bg-[#1F2430] rounded-lg p-2 focus:outline-none border-2 border-cls-grey focus:border-2 focus:border-cls-purple";
   const label = name.charAt(0).toUpperCase() + name.slice(1);
 </script>
 
 <div class="flex flex-col w-full space-y-1 2xl:space-y-2 2xl:text-lg">
-  <label for={name} class="text-cls-light-green">
+  <label for={name} class="text-cls-pink">
     {label}
   </label>
   {#if isTextArea}

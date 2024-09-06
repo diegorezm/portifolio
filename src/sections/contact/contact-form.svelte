@@ -92,7 +92,7 @@
 
 <form
   on:submit={handleSubmit}
-  class="w-full md:w-5/6 2xl:w-1/2 font-secondary min-h-full bg-light-card shadow-default-card p-4 rounded-xl space-y-6 2xl:space-y-8"
+  class="w-full lg:w-1/2 font-secondary min-h-full border-2 border-cls-grey shadow-default p-4 rounded-xl space-y-6 2xl:space-y-8"
 >
   <h1
     class="font-primary text-3xl 2xl:text-4xl font-bold text-center text-cls-foreground w-full"

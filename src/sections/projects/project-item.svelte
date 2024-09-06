@@ -1,15 +1,19 @@
 <script lang="ts">
   import type { Project } from "$lib/content/projects";
   import Button from "../../components/button";
+  import ProjectTag from './project-tag.svelte'
   export let project: Project;
-  const techStr = project.tech.join(", ");
 </script>
 
 <div
-  class="w-full h-full bg-light-card shadow-default-card rounded-lg p-2 space-y-2 2xl:p-4 2xl:space-y-3 overflow-y-auto"
+  class="w-full h-fit bg-light-card shadow-default-card rounded-lg p-4 space-y-2 2xl:p-4 2xl:space-y-3 overflow-y-auto"
 >
-  <p class="text-cls-light-green text-md 2xl:text-lg">{techStr}</p>
-  <h1 class="text-xl 2xl:text-2xl">{project.name}</h1>
+  <div class="flex items-center flex-wrap gap-2 w-full h-fit">
+  {#each project.tech as tag }
+    <ProjectTag tag={tag}/> 
+  {/each}
+  </div>
+  <h1 class="text-2xl 2xl:text-3xl font-semibold">{project.name}</h1>
   {#if project.image !== undefined}
     <img src={project.image} alt={project.name} class="rounded-lg" />
   {/if}
