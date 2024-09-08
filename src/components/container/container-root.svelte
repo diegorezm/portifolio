@@ -16,7 +16,7 @@
 
 <section
   id={containerId}
-  class={`flex flex-col justify-center items-center w-full ${heightClass} ${variantClass}`}
+  class={`flex flex-col justify-center items-center w-full antialiased ${heightClass} ${variantClass}`}
 >
   <slot />
 </section>

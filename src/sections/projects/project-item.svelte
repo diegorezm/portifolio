@@ -13,11 +13,11 @@
     <ProjectTag tag={tag}/> 
   {/each}
   </div>
-  <h1 class="text-2xl 2xl:text-3xl font-semibold">{project.name}</h1>
   {#if project.image !== undefined}
     <img src={project.image} alt={project.name} class="rounded-lg" />
   {/if}
-  <p class="font-secondary text-lg 2xl:text-xl text-cls-foreground-secondary">
+  <h1 class="text-2xl 2xl:text-3xl font-semibold">{project.name}</h1>
+  <p class="font-secondary text-xl text-cls-foreground-secondary">
     {project.description}
   </p>
   <div class="flex flex-col md:flex-row gap-2">

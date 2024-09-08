@@ -37,7 +37,7 @@
             <a
               href={socialItem.href}
               target="_blank"
-              class="flex items-center gap-1 hover:text-cls-foreground"
+              class="flex items-center gap-1 hover:text-cls-pink"
             >
               <Icon icon={socialItem.icon} />
             </a>

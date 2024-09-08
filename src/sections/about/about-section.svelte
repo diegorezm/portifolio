@@ -36,14 +36,14 @@
       >
         <a
           href="https://www.linkedin.com/in/diegorezm/"
-          class="hover:text-cls-foreground"
+          class="hover:text-cls-pink"
           target="_blank"
         >
           <Icon icon="ion:logo-linkedin" />
         </a>
         <a
           href="https://github.com/diegorezm"
-          class="hover:text-cls-foreground"
+          class="hover:text-cls-pink"
           target="_blank"
         >
           <Icon icon="ion:logo-github" />
