@@ -6,9 +6,9 @@
 </script>
 
 <div
-  class="w-full h-fit bg-light-card shadow-default-card rounded-lg p-4 space-y-2 2xl:p-4 2xl:space-y-3 overflow-y-auto"
+  class="flex flex-col justify-between w-full gap-1 h-full bg-light-card shadow-default-card rounded-lg p-4 overflow-y-auto"
 >
-  <div class="flex items-center flex-wrap gap-2 w-full h-fit">
+  <div class="flex items-center gap-1 flex-wrap w-full h-fit">
   {#each project.tech as tag }
     <ProjectTag tag={tag}/> 
   {/each}
