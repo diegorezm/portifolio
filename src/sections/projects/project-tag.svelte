@@ -17,5 +17,5 @@
 </script>
 
 <Button.Root variant="dark" className="px-2">
-  <Button.Normal label={tag} type="button" onClick={toggleTagToFilter} />
+  <Button.Normal label={"#" + tag} type="button" onClick={toggleTagToFilter} />
 </Button.Root>

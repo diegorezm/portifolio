@@ -22,7 +22,7 @@
   on:click={toggleTagToFilter}
 >
   <span>
-    {tag}
+    #{tag}
   </span>
   <Icon icon="mdi:close" />
 </button>
