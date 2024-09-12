@@ -1,8 +1,9 @@
 <script lang="ts">
+  import Icon from "@iconify/svelte";
   import { type Writable } from "svelte/store";
-  import Button from "../../components/button";
 
   export let tag: string;
+
   export let filtered: Writable<string[]>;
 
   const toggleTagToFilter = () => {
@@ -16,6 +17,12 @@
   };
 </script>
 
-<Button.Root variant="dark" className="px-2">
-  <Button.Normal label={tag} type="button" onClick={toggleTagToFilter} />
-</Button.Root>
+<button
+  class="flex items-center gap-1 px-2 text-lg rounded-full w-fit h-fit bg-cls-grey text-cls-pink"
+  on:click={toggleTagToFilter}
+>
+  <span>
+    {tag}
+  </span>
+  <Icon icon="mdi:close" />
+</button>
