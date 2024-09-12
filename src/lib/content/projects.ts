@@ -15,7 +15,7 @@ const projects: Project[] = [
     sourceCode: "https://github.com/diegorezm/convenience.store.api",
     description:
       "Full-stack application consisting of a Spring Boot API that interacts with a SQL database. It includes authentication, tests using JUnit and MockMvc, and utilizes Docker for easy deployment. The frontend is built with Next.js",
-    tech: ["java", "docker", "spring boot", "nextjs", "typescript"],
+    tech: ["java", "docker", "spring boot", "nextjs", "typescript","tailwind"],
     details: "https://www.youtube.com/watch?v=Qd2bRPsiaZE",
     image: "https://i.ytimg.com/vi/Qd2bRPsiaZE/maxresdefault.jpg",
   },
@@ -26,7 +26,7 @@ const projects: Project[] = [
 
     description:
       "A customizable browser start page built with Vue and TypeScript. Users can manage bookmarks, switch themes, and change the background image for a personalized experience.",
-    tech: ["typescript", "vue", "bun"],
+    tech: ["typescript", "vue", "bun", "tailwind"],
     details: "https://diegorezm-start-page.netlify.app/",
 
     image:
@@ -38,7 +38,7 @@ const projects: Project[] = [
     sourceCode: "https://github.com/diegorezm/wallpapercl",
     description:
       "WallpaperCL is a lightweight wallpaper management application built using modern technologies like Rust, TypeScript, and React, powered by Tauri. Designed for Linux users, it offers a seamless experience for organizing and setting wallpapers.",
-    tech: ["rust", "typescript", "react"],
+    tech: ["rust", "typescript", "react", "tailwind"],
     details: "https://www.youtube.com/watch?v=n_2mIcaMpBM",
     image:
       "https://raw.githubusercontent.com/diegorezm/wallpapercl/main/showcase.png",
