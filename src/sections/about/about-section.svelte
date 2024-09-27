@@ -17,11 +17,11 @@
       />
     </div>
     <div class="md:w-1/2 space-y-4">
-      <h1 class="font-primary font-semibold text-4xl text-center">
+      <h1 class="font-primary font-semibold text-4xl text-start">
         <PurpleText>About me</PurpleText>
       </h1>
       <p
-        class="font-secondary text-2xl text-cls-foreground-secondary text-left"
+        class="font-secondary text-2xl text-cls-foreground-secondary text-left font-medium"
       >
         I am a Full Stack Developer from Brazil, currently studying Systems
         Analysis and Development at UNITAU. I have hands-on experience with Java

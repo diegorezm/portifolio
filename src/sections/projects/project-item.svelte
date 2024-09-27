@@ -8,7 +8,7 @@
 </script>
 
 <div
-  class="flex flex-col justify-between w-full h-full gap-1 p-4 overflow-y-auto transition-all rounded-lg bg-light-card shadow-default-card"
+  class="flex flex-col justify-between w-full h-full gap-2 p-4 overflow-y-auto transition-all rounded-lg bg-light-card shadow-default-card"
 >
   <div class="flex flex-wrap items-center w-full gap-1 h-fit">
     {#each project.tech as tag}
