@@ -32,7 +32,7 @@
         professionally in new opportunities.
       </p>
       <div
-        class="flex space-x-4 text-5xl text-cls-foreground-secondary justify-center md:justify-start"
+          class="flex space-x-4 text-5xl text-cls-foreground-secondary justify-start"
       >
         <a
           href="https://www.linkedin.com/in/diegorezm/"
