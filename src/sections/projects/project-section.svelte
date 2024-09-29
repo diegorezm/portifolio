@@ -24,7 +24,7 @@
   });
 </script>
 
-<Container.Root containerId="projects" variant="to_top">
+<Container.Root containerId="projects">
   <Container.Title>Projects</Container.Title>
   <Container.Body>
     {#if $filtered.length > 0}

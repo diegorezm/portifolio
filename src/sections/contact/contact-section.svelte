@@ -26,7 +26,7 @@
   ];
 </script>
 
-<Container.Root variant="to_top" containerId="contact">
+<Container.Root containerId="contact">
   <Container.Title>Contact</Container.Title>
   <Container.Body
     className="flex flex-col items-center justify-center mb-2 gap-4"

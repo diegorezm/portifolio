@@ -1,7 +1,7 @@
 <script lang="ts">
-  type Variant = "hero" | "to_top" | "to_bottom";
+  type Variant = "hero" | "normal";
 
-  export let variant: Variant = "to_bottom";
+  export let variant: Variant = "normal";
   export let isFullscreen = false;
   export let containerId: string;
 
@@ -9,8 +9,7 @@
 
   const variantClass = {
     hero: "bg-hero-gradient",
-    to_top: "bg-bt-gradient",
-    to_bottom: "bg-tb-gradient",
+    normal: "bg-cls-background"
   }[variant];
 </script>
 

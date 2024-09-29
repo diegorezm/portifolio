@@ -5,7 +5,7 @@
   import { technologies } from "$lib/content/technologies";
 </script>
 
-<Container.Root containerId="about" variant="to_bottom" isFullscreen>
+<Container.Root containerId="about" isFullscreen>
   <Container.Body className={"flex flex-col gap-12 h-full w-full"}>
     <section
       class="flex flex-col gap-8 md:gap-0 justify-center items-center md:flex-row"

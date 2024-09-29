@@ -6,7 +6,7 @@
   export let isTextArea = false;
 
   const inpClass =
-    "bg-[#1F2430] rounded-lg p-2 focus:outline-none border-2 border-cls-grey focus:border-2 focus:border-cls-purple";
+    "bg-cls-card-bg border-2 border-cls-grey rounded-lg p-2 focus:outline-none focus:border-2 focus:border-cls-pink";
   const label = name.charAt(0).toUpperCase() + name.slice(1);
 </script>
 

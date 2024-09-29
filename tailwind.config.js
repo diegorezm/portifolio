@@ -1,7 +1,7 @@
 import defaultTheme from "tailwindcss/defaultTheme";
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     extend: {
       colors: {
@@ -14,15 +14,13 @@ export default {
           red: "var(--red)",
           grey: "var(--grey)",
           "light-green": "var(--light-green)",
+          "card-bg": "var(--card-bg)",
         },
       },
       backgroundImage: {
         "hero-gradient": "var(--hero-gradient)",
-        "tb-gradient": "var(--tb-gradient)",
-        "bt-gradient": "var(--bt-gradient)",
         "pink-gradient": "var(--pink-gradient)",
         "dark-gradient": "var(--dark-gradient)",
-        "light-card": "var(--light-card-bg)",
       },
       boxShadow: {
         default: "var(--default-shadow)",
@@ -45,5 +43,4 @@ export default {
     },
   },
   plugins: [],
-}
-
+};
