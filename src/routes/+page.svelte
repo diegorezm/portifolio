@@ -8,7 +8,7 @@
 
 <div>
   <Navbar />
-  <div class="space-y-4">
+  <div class="space-y-6">
     <HomeSection />
     <AboutSection />
     <ProjectSection />

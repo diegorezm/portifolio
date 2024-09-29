@@ -6,7 +6,7 @@
 </script>
 
 <Container.Root containerId="about" isFullscreen>
-  <Container.Body className={"flex flex-col gap-12 h-full w-full"}>
+  <Container.Body className={"flex flex-col gap-20 h-full w-full"}>
     <section
       class="flex flex-col gap-8 md:gap-0 justify-center items-center md:flex-row"
     >
@@ -57,7 +57,7 @@
       <h1 class="font-primary font-semibold text-3xl text-start">
         Technologies I am familiar with:
       </h1>
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-2">
         {#each technologies as technology}
           <div class="flex flex-col gap-2 rounded-lg p-2 w-fit h-fit">
             <Icon icon={technology.icon} class="text-5xl" />
