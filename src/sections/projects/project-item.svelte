@@ -19,7 +19,7 @@
     <img src={project.image} alt={project.name} class="rounded-lg" />
   {/if}
   <h1 class="text-2xl font-semibold 2xl:text-3xl">{project.name}</h1>
-  <p class="text-xl font-secondary text-cls-foreground-secondary">
+  <p class="text-xl font-secondary text-cls-foreground-secondary text-justify">
     {project.description}
   </p>
   <div class="flex flex-col gap-2 md:flex-row">

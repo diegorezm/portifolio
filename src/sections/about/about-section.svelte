@@ -23,7 +23,7 @@
           <PurpleText>About me</PurpleText>
         </h1>
         <p
-          class="font-secondary text-2xl text-cls-foreground-secondary text-left font-medium"
+          class="font-secondary text-2xl text-cls-foreground-secondary text-justify font-medium"
         >
           I am a Full Stack Developer from Brazil, currently studying Systems
           Analysis and Development at UNITAU. I have hands-on experience with
@@ -64,7 +64,7 @@
             <h2 class="font-primary font-semibold text-2xl">
               {technology.title}
             </h2>
-            <p class="font-secondary text-cls-foreground-secondary text-lg">
+            <p class="font-secondary text-cls-foreground-secondary text-lg text-justify">
               {technology.description}
             </p>
           </div>
