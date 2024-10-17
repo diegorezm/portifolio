@@ -64,7 +64,7 @@
             <h2 class="font-primary font-semibold text-2xl">
               {technology.title}
             </h2>
-            <p class="font-secondary text-cls-foreground-secondary text-lg text-justify">
+            <p class="font-secondary text-cls-foreground-secondary text-lg text-left">
               {technology.description}
             </p>
           </div>
